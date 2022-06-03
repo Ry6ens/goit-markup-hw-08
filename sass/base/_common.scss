@@ -1,0 +1,39 @@
+body {
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
