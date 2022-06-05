@@ -21,6 +21,12 @@
                 <a class="logo" href="./index.html">
                     <span class="logo__color">Web</span>Studio
                 </a>
+                <button class="mobile__menu-btn" type="button" data-menu-button>
+                    <svg class="mobile__icon-btn" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="mobile__icon-open" href="./images/icons.svg#icon-open-burger"></use>
+                        <use class="mobile__icon-close" href="./images/icons.svg#icon-close-burger"></use>
+                    </svg>
+                </button>
                 <ul class="list nav__list">
                     <li class="nav__item"><a class="link nav__link currentpage" href="./index.html">Студия</a></li>
                     <li class="nav__item"><a class="link nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -45,28 +51,23 @@
                     </a>
                 </li>
             </ul>
-            <button class="mobile__menu-btn">
-                <svg  class="mobile__burger-btn">
-                    <use herf="./images/icons.svg#icon-open-burger"></use>
-                    <use herf="./images/icons.svg#icon-close-burger"></use>
-                </svg>
-            </button>
         </div>
     </header>
 
     <main>
+
         <!-- HERO -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section>
+        </section> -->
 
         <!-- Особенности -->
-        <section class="section features-main">
+        <!-- <section class="section features-main">
             <div class="container">
-                <h2 class="hide__title">Особенности</h2> <!-- для accessibility. нужно будет спрятать -->
+                <h2 class="hide__title">Особенности</h2>
 
                 <ul class="list features__list">
                     <li class="features__item features__icon-antenna">
@@ -91,10 +92,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Чем мы занимаемся -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="list description__list">
@@ -118,10 +119,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Наша команда -->
-        <section class="section ourteam">
+        <!-- <section class="section ourteam">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="list team__list">
@@ -275,10 +276,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Постоянные клиенты -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="list clients__list">
@@ -326,10 +327,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__layer">
             <div>
                 <a class="logo footer__logo" href="./index.html">
@@ -396,7 +397,8 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__icon-close" data-modal-close aria-label="закрыть">
@@ -442,7 +444,9 @@
             </form>
         </div>
     </div>
+
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>

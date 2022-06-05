@@ -1,0 +1,30 @@
+.mobile__menu-btn {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 767.98px) {
+            display: none;
+        }
+}
+
+.mobile__icon-btn {
+    &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+}
+
+.mobile__menu-btn .mobile__icon-close {
+    display: none;
+}
+
+.mobile__menu-btn.is-open .mobile__icon-close {
+    display: block;
+}
+
+.mobile__menu-btn.is-open .mobile__icon-open {
+    display: none;
+}

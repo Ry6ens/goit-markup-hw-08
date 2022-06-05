@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import "./utils/_normalize";
+@import "./utils/normalize";
 
 @import "./base/common";
 @import "./base/container";
@@ -9,7 +9,8 @@
 @import "./components/modal-form";
 @import "./components/filter-buttons";
 @import "./components/social-icons";
-@import "./components/_title";
+@import "./components/title";
+@import "./components/mobile-menu";
 
 @import "./layouts/header";
 @import "./layouts/hero";
