@@ -1220,7 +1220,13 @@ button {
 
 .team__layout {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__layout {
+    padding-bottom: 30px;
+  }
 }
 
 .team__name {
