@@ -28,6 +28,11 @@
 }
 
 .mobile__menu-btn.is-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+
     .mobile__icon-close {
         display: block;
     }
@@ -81,7 +86,11 @@
 }
 
 .mobile__info-list {
-    margin-top: 300px;
+    margin-top: 35px;
+
+    @media screen and (min-width: 480px) {
+        margin-top: 300px;
+    }
 }
 
 .mobile__info-item {

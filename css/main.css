@@ -374,18 +374,32 @@ button {
 
 .modal {
   position: absolute;
-  padding: 40px;
+  padding: 30px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 320px;
   height: 581px;
   background-color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__icon-close {
   display: flex;
   position: absolute;
+  justify-content: center;
   top: 0;
   right: 0;
   margin: 8px 8px;
@@ -440,7 +454,7 @@ button {
 
 .modal__form-input {
   padding: 12px 20px 12px 40px;
-  width: 448px;
+  width: 260px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -457,6 +471,18 @@ button {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal__form-input {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form-input {
+    width: 448px;
+  }
+}
+
 .modal__form-icon {
   position: absolute;
   bottom: 11px;
@@ -466,7 +492,7 @@ button {
 
 .modal__form-comments {
   padding: 12px 16px 12px 16px;
-  width: 448px;
+  width: 260px;
   height: 120px;
   font-size: 14px;
   line-height: 1.14;
@@ -482,14 +508,32 @@ button {
   border: 1px solid var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal__form-comments {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form-comments {
+    width: 448px;
+  }
+}
+
 .modal__checkbox {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .modal__checkbox {
+    margin-bottom: 30px;
+  }
 }
 
 .modal__checkbox-input {
@@ -506,8 +550,6 @@ button {
 }
 
 .modal__checkbox-icon {
-  display: inline-block;
-  margin-left: 13px;
   margin-right: 7px;
   width: 15px;
   height: 15px;
@@ -516,9 +558,26 @@ button {
   border-radius: 2px;
 }
 
+.modal__checkbox-text {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-text {
+    font-size: 14px;
+  }
+}
+
 .modal__checkbox-contract {
+  font-size: 12px;
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-contract {
+    font-size: 14px;
+  }
 }
 
 .modal__button {
@@ -707,6 +766,13 @@ button {
   display: none;
 }
 
+.mobile__menu-btn.is-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-right: 15px;
+}
+
 .mobile__menu-btn.is-open .mobile__icon-close {
   display: block;
 }
@@ -755,7 +821,13 @@ button {
 }
 
 .mobile__info-list {
-  margin-top: 300px;
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile__info-list {
+    margin-top: 300px;
+  }
 }
 
 .mobile__info-item {
@@ -1114,6 +1186,13 @@ button {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .features__label {
@@ -1128,6 +1207,7 @@ button {
 @media screen and (min-width: 1200px) {
   .description__section {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -1412,6 +1492,12 @@ button {
   border: 1px solid #EEEEEE;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio__frame {
+    height: 145px;
+  }
+}
+
 .portfolio__item:hover .portfolio__overlay,
 .portfolio__item:focus .portfolio__overlay {
   transform: translateY(0);
@@ -1419,13 +1505,20 @@ button {
 }
 
 .portfolio__label {
-  margin: 0;
-  padding: 0;
+  padding: 20px;
   width: 322px;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio__label {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
 }
 
 .portfolio__title {

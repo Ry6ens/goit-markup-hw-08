@@ -64,13 +64,24 @@
 }
 
 .portfolio__frame {
+    // display: flex;
+    // flex-direction: column;
+
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
 
     border: 1px solid #EEEEEE;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        height: 145px;
+    }
 }
+
+// .portfolio__frame > .portfolio__title {
+//     flex-grow: 2;
+// }
 
 .portfolio__item:hover .portfolio__overlay,
 .portfolio__item:focus .portfolio__overlay {
@@ -79,13 +90,18 @@
 }
 
 .portfolio__label {
-    margin: 0;
-    padding: 0;
+    padding: 20px;
     width: 322px;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 480px) {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
 }
 
 .portfolio__title {

@@ -65,6 +65,11 @@ astronaut {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .features__label {

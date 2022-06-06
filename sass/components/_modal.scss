@@ -20,20 +20,30 @@
 
 .modal {
     position: absolute;
-    padding: 40px;
+    padding: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
+    width: 320px;
     height: 581px;
 
     background-color: rgba(255, 255, 255, 1);
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        padding: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal__icon-close {
     display: flex;
     position: absolute;
+    justify-content: center;
     top: 0;
     right: 0;
     margin: 8px 8px;
