@@ -361,6 +361,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 222;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity ease-in-out .3s;
 }
@@ -787,7 +788,7 @@ button {
   left: -100%;
   display: flex;
   flex-direction: column;
-  padding: 50px 40px;
+  padding: 50px 20px;
   z-index: 100;
   width: 100%;
   height: 100vh;
@@ -798,6 +799,12 @@ button {
 
 .mobile__menu.is-open {
   left: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile__menu {
+    padding: 50px 40px;
+  }
 }
 
 .mobile__nav-item {
@@ -857,21 +864,38 @@ button {
 }
 
 .mobile__society-item {
-  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile__society-item:first-child {
-  margin-left: 0;
+  padding-left: 0;
+}
+
+.mobile__society-item:last-child {
+  border-right: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile__society-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .mobile__society-link {
-  padding-right: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mobile__society-link {
+    font-size: 18px;
+  }
 }
 
 .page__header {
@@ -912,16 +936,10 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .nav__info {
-    margin-top: 20px;
-    margin-left: 80px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .nav__info {
     display: block;
+    margin-left: 80px;
     margin-top: 20px;
   }
 }
@@ -1022,17 +1040,19 @@ button {
   color: var(--accent-color);
 }
 
-.currentpage::after {
-  position: absolute;
-  content: '';
-  display: block;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
-  background-repeat: no-repeat;
-  background-position: bottom;
+@media screen and (min-width: 768px) {
+  .currentpage::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 .hero {
