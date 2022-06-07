@@ -1,17 +1,16 @@
 .filter__list {
     margin-bottom: 40px;
 
-    @media screen and (min-width: 480px) {
+    @include media(mobile) {
         display: flex;
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         justify-content: center;
     }
 
-
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         justify-content: center;
         margin-bottom: 50px;
     }
@@ -21,10 +20,10 @@
     margin-bottom: 15px;
 
     &:last-child {
-            margin-bottom: 0;
-        }
+        margin-bottom: 0;
+    }
 
-    @media screen and (min-width: 480px) {
+    @include media(mobile) {
         margin-bottom: 15px;
 
         &:nth-child(4n) {
@@ -33,15 +32,13 @@
 
 
         &:not(:last-child) {
-                margin-right: 8px;
-            }
+            margin-right: 8px;
+        }
     }
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         margin-bottom: 0;
     }
-
-   
 }
 
 .filter__button {

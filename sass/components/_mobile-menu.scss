@@ -10,9 +10,9 @@
 
     background-color: transparent;
 
-    @media screen and (min-width: 767.98px) {
-            display: none;
-        }
+    @include media(tablet) {
+        display: none;
+    }
 }
 
 .mobile__icon-btn {
@@ -59,8 +59,8 @@
     transition: left 0.5s;
 
     &.is-open {
-            left: 0;
-        }
+        left: 0;
+    }
 }
 
 .mobile__nav-item {
@@ -88,7 +88,7 @@
 .mobile__info-list {
     margin-top: 35px;
 
-    @media screen and (min-width: 480px) {
+    @include media(mobile) {
         margin-top: 300px;
     }
 }
@@ -110,7 +110,7 @@
     color: var(--secondary-text-color);
 
     &#info-link-color {
-    color: var(--accent-color);
+        color: var(--accent-color);
     }
 }
 

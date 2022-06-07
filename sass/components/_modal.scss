@@ -30,12 +30,12 @@
 
     background-color: rgba(255, 255, 255, 1);
 
-    @media screen and (min-width: 480px) {
+    @include media(mobile) {
         width: 450px;
         padding: 40px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         width: 528px;
     }
 }
@@ -60,7 +60,8 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
         fill: var(--accent-color);
     }
 }

@@ -752,7 +752,7 @@ button {
   background-color: transparent;
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .mobile__menu-btn {
     display: none;
   }

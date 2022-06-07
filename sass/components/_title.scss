@@ -4,9 +4,9 @@
     line-height: 1.16;
     text-align: center;
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-    }
+    @include media(desktop) {
+            margin-bottom: 50px;
+        }
 }
 
 .hide__title {

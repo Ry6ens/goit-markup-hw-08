@@ -58,11 +58,11 @@
         fill: var(--accent-color);
     }
 
-    @media screen and (min-width: 480px) {
+    @include media(mobile) {
         width: 370px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         width: 448px;
     }
 }
@@ -97,11 +97,11 @@
         border: 1px solid var(--accent-color);
     }
 
-    @media screen and (min-width: 480px) {
+    @include media(mobile) {
         width: 370px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         width: 448px;
     }
 }
@@ -117,7 +117,7 @@
 
     color: var(--secondary-text-color);
 
-    @media screen and (min-width: 480px) {
+    @include media(mobile) {
         margin-bottom: 30px;
     }
 }
@@ -147,7 +147,7 @@
 .modal__checkbox-text {
     font-size: 12px;
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         font-size: 14px;
     }
 }
@@ -157,9 +157,9 @@
     text-decoration: underline;
     color: var(--accent-color);
 
-    @media screen and (min-width: 1200px) {
-            font-size: 14px;
-        }
+    @include media(desktop) {
+        font-size: 14px;
+    }
 }
 
 .modal__button {
