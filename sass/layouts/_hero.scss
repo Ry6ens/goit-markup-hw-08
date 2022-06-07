@@ -8,9 +8,9 @@
     background: #2F303A;
 
     background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/mobile/hero/hero-mobile.jpg);
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/mobile/hero/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -72,7 +72,7 @@
 
     color: var(--primary-white-color);
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         max-width: 696px;
 
         font-weight: 900;

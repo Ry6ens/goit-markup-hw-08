@@ -15,12 +15,12 @@
         margin-bottom: 0;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         flex-basis: calc((100% - 30px) / 2);
         margin-right: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    @include media(tablet-only) {
         &:nth-child(2n) {
             margin-right: 0;
         }
@@ -34,7 +34,7 @@
         }
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         flex-basis: calc((100% - 30px * 3) / 4);
         margin-bottom: 0;
 
@@ -55,9 +55,9 @@
     padding-top: 30px;
     padding-bottom: 24px;
 
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 30px;
-    }
+    @include media(desktop) {
+            padding-bottom: 30px;
+        }
 }
 
 .team__name {

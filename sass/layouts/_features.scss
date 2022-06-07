@@ -6,12 +6,12 @@
 .features__item {
     margin-bottom: 30px;
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         flex-basis: calc((100% - 30px) / 2);
         margin-right: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    @include media(tablet-only) {
         &:nth-child(2n) {
             margin-right: 0;
         }
@@ -21,8 +21,7 @@
         }
     }
 
-
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         flex-basis: calc((100% - 30px * 3) / 4);
 
         &:nth-child(4n) {
@@ -67,7 +66,7 @@ astronaut {
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         text-align: left;
     }
 }

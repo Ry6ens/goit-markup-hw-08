@@ -4,7 +4,7 @@
 
 .main__header {
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         display: flex;
         justify-content: space-between;
     }
@@ -19,12 +19,12 @@
 .nav__list {
     display: none;
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         display: flex;
         margin-left: 88px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         margin-left: 93px;
     }
 }
@@ -32,12 +32,17 @@
 .nav__info {
     display: none;
 
-    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    @include media(tablet) {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    @include media(tablet-only) {
         display: block;
         margin-top: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         display: flex;
     }
 }
@@ -60,8 +65,8 @@
 
 @media screen and (max-width: 1200px) {
     .nav__info .nav__item {
-            margin-right: 0px;
-        }
+        margin-right: 0px;
+    }
 }
 
 .nav__link {
@@ -85,7 +90,7 @@
         color: var(--accent-color);
     }
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -101,11 +106,11 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         padding-bottom: 10px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         padding-top: 32px;
         padding-bottom: 32px;
     }

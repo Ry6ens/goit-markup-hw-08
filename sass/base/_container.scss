@@ -5,15 +5,27 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    @media screen and (min-width: 480px) {
+    // @media screen and (min-width: 480px) {
+    //     max-width: 480px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     max-width: 768px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     max-width: 1200px;
+    // }
+
+    @include media(mobile) {
         max-width: 480px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media(tablet) {
         max-width: 768px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media(desktop) {
         max-width: 1200px;
     }
 }
