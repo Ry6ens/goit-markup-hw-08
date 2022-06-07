@@ -144,19 +144,12 @@
 }
 
 .mobile__society-link {
-    // padding-right: 5px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    // border-right: 1px solid rgba(33, 33, 33, 0.2);
-
     color: var(--accent-color);
-
-    // &:not-last-child() {
-    //     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    // }
 
     @include media(mobile) {
         // padding-right: 10px;
