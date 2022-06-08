@@ -652,7 +652,7 @@ button {
   }
 }
 
-.filter__button {
+.filter__button, .filter__button-active {
   width: 100%;
   padding: 6px 22px 6px 22px;
   font-weight: 500;
@@ -667,13 +667,13 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter__button:hover, .filter__button:focus {
+.filter__button:hover, .filter__button-active:hover, .filter__button:focus, .filter__button-active:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.filter__button--active {
+.filter__button-active {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
