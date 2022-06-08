@@ -152,7 +152,6 @@
     color: var(--accent-color);
 
     @include media(mobile) {
-        // padding-right: 10px;
         font-size: 18px;
     }
 }
